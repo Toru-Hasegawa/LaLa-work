@@ -1,6 +1,6 @@
 package ex5;
 
-public class ex5_3 {
+public class Ex5_3 {
 
 	public static void main(String[] args) {
 		String address = "abc123@gmail.com";

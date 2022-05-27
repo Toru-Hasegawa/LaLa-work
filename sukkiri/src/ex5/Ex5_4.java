@@ -1,6 +1,6 @@
 package ex5;
 
-public class ex5_4 {
+public class Ex5_4 {
 
 	public static void main(String[] args) {
 		double triangleArea = calcTriangleArea(10.0, 5.0);
@@ -9,7 +9,7 @@ public class ex5_4 {
 		System.out.println("円の面積:" + circleArea + "平方cm");
 	}
 	public static double calcTriangleArea(double bottom, double height) {
-		double area = (bottom * height) / 2;
+		double area = (bottom * height) / 2.0;
 		return area;
 	}
 	public static double calcCircleArea(double radius) {
