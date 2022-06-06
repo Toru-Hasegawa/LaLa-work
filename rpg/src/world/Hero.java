@@ -5,6 +5,12 @@ public class Hero {
 	private String name;
 	private Sword sword;
 	
+	public Sword getSword() {
+		return sword;
+	}
+	public void setSword(Sword sword) {
+		this.sword = sword;
+	}
 	public Hero() {
 		System.out.println("Heroのコンストラクタが動作");
 	}
