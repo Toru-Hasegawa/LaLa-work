@@ -3,18 +3,23 @@ package v3;
 public class Main {
 
 	public static void main(String[] args) {
-		Com com1 = new Com(new RandomNextHand());
+		System.out.println("NINZU:" + Const.NINZU);
+		// Com com1 = new Com(new RandomNextHand());
+		Com com1 = new Com(new CleverNextHand());
 		com1.setName("コム1");
-		
+		// com1.setNextHand(new CleverNextHand());
+
 		User user = new User(new InputNextHand());
 		user.setName("サスケ");
-		
-		com1.setHand();
-		user.setHand();
+
 		Game game = new Game();
-		game.Judge(com1, user);
-		game.dispResult(com1, user);
-		
+		do {
+			com1.setHand();
+			user.setHand();
+			game.Judge(com1, user);
+			game.dispResult(com1, user);
+		} while (game.isNext());
+		System.out.println("bye!");
 
 	}
 
