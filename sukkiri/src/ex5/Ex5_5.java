@@ -10,8 +10,8 @@ public class Ex5_5 {
 		int x = new java.util.Scanner(System.in).nextInt();
 		System.out.println("数字を再度入力してください");
 		int y = new java.util.Scanner(System.in).nextInt();
-		int answer = (x, y);
-		System.out.println("答え:" + answer);
+		// int answer = (x, y);
+		// System.out.println("答え:" + answer);
 	}
 	public static int plus(int x, int y) {
 		int answer = x + y;
